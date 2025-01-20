@@ -1,11 +1,15 @@
+import hero from './herosec.jpg';
+
 function Hero() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between py-16">
+    <div className="flex flex-col md:flex-row items-center justify-between py-16 px-6 md:px-12 bg-gray-50">
       {/* Left Side Content */}
       <div className="max-w-lg text-center md:text-left">
-        <h1 className="text-4xl font-extrabold text-gray-800 leading-snug">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">
           Tamil Nadu{" "}
-          <span className="text-blue-600">Electricity Bill Calculator</span>
+          <span className="text-blue-600">
+            Electricity Bill Calculator
+          </span>
         </h1>
         <p className="text-lg text-gray-600 mt-6 leading-relaxed">
           Simplify your electricity bill calculations with our Tamil Nadu EB
@@ -17,17 +21,17 @@ function Hero() {
           Take control of your power costs and make informed decisions
           effortlessly!
         </p>
-        <button className="mt-8 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 shadow-lg">
+        <button className="mt-8 bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 shadow-lg transform hover:scale-105">
           Calculate Now
         </button>
       </div>
 
       {/* Right Side Image */}
-      <div className="mt-10 md:mt-0">
+      <div className="mt-10 md:mt-0 md:w-1/2">
         <img
-          src="https://picsum.photos/id/237/700/500"
+          src={hero}
           alt="Electricity Calculation"
-          className="rounded-lg shadow-2xl"
+          className="rounded-lg shadow-2xl object-cover w-full"
         />
       </div>
     </div>
