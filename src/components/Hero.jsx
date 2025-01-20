@@ -1,5 +1,5 @@
 import hero from './herosec.jpg';
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between py-16 px-6 md:px-12 bg-gray-50">
@@ -21,9 +21,10 @@ function Hero() {
           Take control of your power costs and make informed decisions
           effortlessly!
         </p>
-        <button className="mt-8 bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 shadow-lg transform hover:scale-105">
+        <br />
+        <Link to="/calculation" className="mt-8 bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 shadow-lg transform hover:scale-105">
           Calculate Now
-        </button>
+        </Link>
       </div>
 
       {/* Right Side Image */}
