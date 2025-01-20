@@ -7,18 +7,28 @@ function Home() {
   return (
     <Router>
       <div className="bg-slate-100 min-h-screen">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 md:px-12">
           {/* Navbar */}
           <nav className="py-6 flex items-center justify-between">
             <h1 className="text-3xl font-extrabold text-blue-700">EB Calculator</h1>
-            <div className="flex space-x-16 text-lg font-medium text-gray-700">
-              <Link to="/" className="hover:text-blue-500 transition duration-300">
+            
+            <div className="flex space-x-8 md:space-x-16 text-lg font-medium text-gray-700">
+              <Link 
+                to="/" 
+                className="hover:text-blue-500 transition duration-300"
+              >
                 Home
               </Link>
-              <Link to="/table" className="hover:text-blue-500 transition duration-300">
+              <Link 
+                to="/table" 
+                className="hover:text-blue-500 transition duration-300"
+              >
                 Table
               </Link>
-              <Link to="/calculation" className="hover:text-blue-500 transition duration-300">
+              <Link 
+                to="/calculation" 
+                className="hover:text-blue-500 transition duration-300"
+              >
                 Calculation
               </Link>
             </div>
